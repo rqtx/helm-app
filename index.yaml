@@ -3,12 +3,12 @@ entries:
   app:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-08-01T01:47:16.973983501-03:00"
+    created: "2024-08-01T01:54:06.646993113-03:00"
     description: A Helm chart for Kubernetes
     digest: 83d8f59aaf092dab5bb5f96f3623ae3b305c9dcb08b406047f67bdfd02ac5c63
     name: app
     type: application
     urls:
-    - https://github.com/rqtx/helm-app/app-0.1.0.tgz
+    - https://rqtx.github.io/helm-app/app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-01T01:47:16.972755087-03:00"
+generated: "2024-08-01T01:54:06.646194075-03:00"
