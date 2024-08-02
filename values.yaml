@@ -31,7 +31,7 @@ podLabels: {}
 
 # Pod Security Standards
 # https://kubernetes.io/docs/concepts/security/pod-security-standards/
-podSecurityStandards: "Privileged"
+podSecurityStandards: "Restricted"
 
 # Container capabilities
 capabilities: []
@@ -45,14 +45,14 @@ network:
     #  targetPort: 8080
     #  protocol: TCP
 
-storage:
-  - name: "test"
-    accessModes:
-      - ReadWriteOnce
-    storageClassName: "nfs-client"
-    size: 5Gi
-    mountPath: /config
-    subPath: ""
+storage: {}
+  # - name: "test"
+  #   accessModes:
+  #     - ReadWriteOnce
+  #   storageClassName: "nfs-client"
+  #   size: 5Gi
+  #   mountPath: /config
+  #   subPath: ""
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
