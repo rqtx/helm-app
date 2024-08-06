@@ -39,7 +39,7 @@ spec:
             {{- else }}
             {{ toYaml . | nindent 4 }}
             {{- end }}
-          {{ end }}
+          {{- end }}
           securityContext:
             {{- include "app.deployment.securityContext" . | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
