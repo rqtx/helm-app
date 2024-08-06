@@ -37,9 +37,8 @@ podSecurityStandards: "Restricted"
 capabilities: []
 
 network:
-  # hostname:port -> test.akira:80
-  endpoint: ""
-  service: {}
+  endpoint: "" # hostname:port -> test.akira:80
+  service: []
     #- name: http
     #  port: 80
     #  targetPort: 8080
