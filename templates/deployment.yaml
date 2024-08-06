@@ -32,12 +32,14 @@ spec:
         {{- include "app.deployment.podSecurityContext" . | nindent 8 }}
       containers:
         - name: {{ .Chart.Name }}
+          {{- with .Values.args }}
           args: 
             {{- if kindIs "string" . }}
             - {{ . }}
             {{- else }}
             {{ toYaml . | nindent 4 }}
             {{- end }}
+          {{ end }}
           securityContext:
             {{- include "app.deployment.securityContext" . | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
