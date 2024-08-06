@@ -33,7 +33,7 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           {{- with .Values.args }}
-          args: 
+          args:
             {{- if kindIs "string" . }}
             - {{ . }}
             {{- else }}
